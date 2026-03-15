@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  /* Light(Default) Mode */
+  --background: #f6f3ff;
+  --foreground: #1a1625;
+  --card: rgba(255, 255, 255, 0.7);
+  --card-foreground: #1a1625;
+  --popover: rgba(255, 255, 255, 0.9);
+  --popover-foreground: #1a1625;
+  --primary: #6e4dff;
+  --primary-foreground: #ffffff;
+  --secondary: #9f7aea;
+  --secondary-foreground: #ffffff;
+  --accent: #c084fc;
+  --accent-foreground: #1a1625;
+  --muted: #e9e4f7;
+  --muted-foreground: #6b6580;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(110, 77, 255, 0.1);
+  --input: rgba(110, 77, 255, 0.1);
+  --input-background: rgba(255, 255, 255, 0.5);
+  --switch-background: #d1c9e8;
+  --ring: #6e4dff;
+
+  /* Chart colors */
+  --chart-1: #6e4dff;
+  --chart-2: #9f7aea;
+  --chart-3: #c084fc;
+  --chart-4: #e9d5ff;
+  --chart-5: #f3e8ff;
+
+  /* Glass effect */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(110, 77, 255, 0.2);
+
+  /* Border radius */
+  --radius: 0.75rem;
+
+  /* Font families */
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Sora", serif;
+  --font-mono: "Space Grotesk", monospace;
+}
+
+.dark {
+  /* Purple/Violet Color Palette - Dark Mode */
+  --background: #0f0b1a;
+  --foreground: #f6f3ff;
+  --card: rgba(30, 25, 45, 0.7);
+  --card-foreground: #f6f3ff;
+  --popover: rgba(30, 25, 45, 0.9);
+  --popover-foreground: #f6f3ff;
+  --primary: #6e4dff;
+  --primary-foreground: #ffffff;
+  --secondary: #9f7aea;
+  --secondary-foreground: #ffffff;
+  --accent: #c084fc;
+  --accent-foreground: #ffffff;
+  --muted: #1e192d;
+  --muted-foreground: #a7a0bd;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(110, 77, 255, 0.2);
+  --input: rgba(110, 77, 255, 0.2);
+  --ring: #9f7aea;
+
+  /* Chart colors */
+  --chart-1: #6e4dff;
+  --chart-2: #9f7aea;
+  --chart-3: #c084fc;
+  --chart-4: #8b5cf6;
+  --chart-5: #7c3aed;
+
+  /* Glass effect */
+  --glass-bg: rgba(30, 25, 45, 0.7);
+  --glass-border: rgba(110, 77, 255, 0.3);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
