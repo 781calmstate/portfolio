@@ -1,4 +1,10 @@
-import { ThemeProvider, Layout, Container, Header } from "./components";
+import {
+  ThemeProvider,
+  Layout,
+  Container,
+  Header,
+  CustomCursor,
+} from "./components";
 
 function App() {
   return (
@@ -7,6 +13,7 @@ function App() {
         <Container>
           <Header />
         </Container>
+        <CustomCursor />
       </Layout>
     </ThemeProvider>
   );
