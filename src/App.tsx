@@ -1,9 +1,13 @@
-import { ThemeProvider, Layout } from "./components";
+import { ThemeProvider, Layout, Container, Header } from "./components";
 
 function App() {
   return (
     <ThemeProvider>
-      <Layout>My Portfolio Coming Soon!</Layout>
+      <Layout>
+        <Container>
+          <Header />
+        </Container>
+      </Layout>
     </ThemeProvider>
   );
 }
